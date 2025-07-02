@@ -14,7 +14,34 @@
                 font-style: italic;
                 box-shadow: 0 2px 4px rgba(0,0,0,0.1);
                 max-width: 300px;
-}
+        }
+        footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #06437a;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin: 10px;
+      color: white;
+    }
+
+    h3 {
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+    }
+
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
     </style>
 </head>
 <body>
@@ -56,7 +83,23 @@
     </aside>
 
     <footer id="Contact us">
-        <p>Email:Thewanderer@gmail.com | Number: 56982586256</p>
+        <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>Email: contact@example.com</p>
+      <p>Phone: +91 12345 67890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+            <p><a href="#" style="color:white;">Home</a></p>
+            <p><a href="#" style="color:white;">About</a></p>
+            <p><a href="#" style="color:white;">Services</a></p>
+        </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+            <p><a href="#" style="color:white;">Instagram</a></p>
+            <p><a href="#" style="color:white;">Facebook</a></p>
+            <p><a href="#" style="color:white;">Twitter</a></p>
+      </div> 
     </footer>
     
 </body>
